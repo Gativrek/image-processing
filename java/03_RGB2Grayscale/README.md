@@ -73,6 +73,3 @@ The output can either replace the original image or open as a new window,
 labeled with a suffix indicating the method used.
 
 &#x20;
-
-\---
-
