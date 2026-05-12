@@ -36,7 +36,3 @@ from the preserved original:
 
 | Desaturation | 0 to 100 | 0 | Linearly interpolates each pixel toward its BT.601 grayscale equivalent; 100 = fully grayscale |
 
-&#x20;
-
-\---
-
