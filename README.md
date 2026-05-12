@@ -1,172 +1,172 @@
-# \# Image Processing Projects
+\# Image Processing Projects
 
-# 
 
-# Collection of image processing projects developed for an Image Processing course that I attended during my undergraduate days at the Instituto Federal Fluminense. Covers classical image analysis techniques implemented from scratch in Java as ImageJ plugins, and a deep learning pipeline built in Python on Google Colab.
 
-# 
+Collection of image processing projects developed for an Image Processing course that I attended during my undergraduate days at the Instituto Federal Fluminense. Covers classical image analysis techniques implemented from scratch in Java as ImageJ plugins, and a deep learning pipeline built in Python on Google Colab.
 
-# \## Repository Structure
 
-# 
 
-# ```
+\## Repository Structure
 
-# image-processing-projects/
 
-# ├── README.md
 
-# ├── java/
+```
 
-# │   ├── 01\_BloodCellAnalysis/
+image-processing-projects/
 
-# │   │   ├── BloodAnalysis.java
+├── README.md
 
-# │   │   └── README.md
+├── java/
 
-# │   ├── 02\_ColorChannelManipulator/
+│   ├── 01\_BloodCellAnalysis/
 
-# │   │   ├── SplitChannels.java
+│   │   ├── BloodAnalysis.java
 
-# │   │   ├── MergeChannels.java
+│   │   └── README.md
 
-# │   │   └── README.md
+│   ├── 02\_ColorChannelManipulator/
 
-# │   ├── 03\_RGB2Grayscale/
+│   │   ├── SplitChannels.java
 
-# │   │   ├── ColorBarGenerator.java
+│   │   ├── MergeChannels.java
 
-# │   │   ├── RGBToGrayscale.java
+│   │   └── README.md
 
-# │   │   └── README.md
+│   ├── 03\_RGB2Grayscale/
 
-# │   ├── 04\_Point2PointOperations/
+│   │   ├── ColorBarGenerator.java
 
-# │   │   ├── ImageAdjustments.java
+│   │   ├── RGBToGrayscale.java
 
-# │   │   └── README.md
+│   │   └── README.md
 
-# │   ├── 05\_HistogramOperations/
+│   ├── 04\_Point2PointOperations/
 
-# │   │   ├── HistogramOperations.java
+│   │   ├── ImageAdjustments.java
 
-# │   │   └── README.md
+│   │   └── README.md
 
-# │   ├── 06\_SpatialFilters/
+│   ├── 05\_HistogramOperations/
 
-# │   │   ├── SpatialFilters.java
+│   │   ├── HistogramOperations.java
 
-# │   │   ├── NonLinearFilters.java
+│   │   └── README.md
 
-# │   │   └── README.md
+│   ├── 06\_SpatialFilters/
 
-# │   ├── 07\_MorphologicalOperations/
+│   │   ├── SpatialFilters.java
 
-# │   │   ├── MorphologicalOps.java
+│   │   ├── NonLinearFilters.java
 
-# │   │   └── README.md
+│   │   └── README.md
 
-# │   ├── 08\_RegionOfInterest/
+│   ├── 07\_MorphologicalOperations/
 
-# │   │   ├── ROIExtractor.java
+│   │   ├── MorphologicalOps.java
 
-# │   │   └── README.md
+│   │   └── README.md
 
-# │   └── 09\_ConnectedComponents/
+│   ├── 08\_RegionOfInterest/
 
-# │       ├── ConnectedComponents.java
+│   │   ├── ROIExtractor.java
 
-# │       └── README.md
+│   │   └── README.md
 
-# └── colab/
+│   └── 09\_ConnectedComponents/
 
-# &#x20;   ├── 10\_YOLOTrainingPipeline/
+│       ├── ConnectedComponents.java
 
-# &#x20;   │   ├── roiExtraction.ipynb
+│       └── README.md
 
-# &#x20;   │   ├── yoloDatasetGen.ipynb
+└── colab/
 
-# &#x20;   │   ├── yoloTraining.ipynb
+&#x20;   ├── 10\_YOLOTrainingPipeline/
 
-# &#x20;   │   └── README.md
+&#x20;   │   ├── roiExtraction.ipynb
 
-# ```
+&#x20;   │   ├── yoloDatasetGen.ipynb
 
-# 
+&#x20;   │   ├── yoloTraining.ipynb
 
-# \## Java Projects (01–09)
+&#x20;   │   └── README.md
 
-# 
+```
 
-# All Java projects are ImageJ plugins written and compiled in Eclipse IDE. Each implements its processing pipeline from scratch without relying on ImageJ's built-in filters, except where noted.
 
-# 
 
-# | # | Project | Topics |
+\## Java Projects (01–09)
 
-# |---|---|---|
 
-# | 01 | Blood Cell Analysis | Finding white blood cells in a microscope picture |
 
-# | 02 | Channel Split and Merge | RGB bit manipulation, packed integer encoding |
+All Java projects are ImageJ plugins written and compiled in Eclipse IDE. Each implements its processing pipeline from scratch without relying on ImageJ's built-in filters, except where noted.
 
-# | 03a | Color Bar Generator | Synthetic image generation, RGB encoding |
 
-# | 03b | RGB to Grayscale | Luminance weighting (BT.601, BT.709), method comparison |
 
-# | 04 | Image Adjustments | Brightness, contrast, solarization, desaturation, live preview via `DialogListener` |
+| # | Project | Topics |
 
-# | 05 | Histogram Operations | Histogram expansion, histogram equalization via CDF |
+|---|---|---|
 
-# | 06 | Spatial Filters | Linear convolution (mean, sharpen, edge); Sobel operator; median filter |
+| 01 | Blood Cell Analysis | Finding white blood cells in a microscope picture |
 
-# | 07 | Morphological Operations | Erosion, dilation, outline extraction, morphological skeleton |
+| 02 | Channel Split and Merge | RGB bit manipulation, packed integer encoding |
 
-# | 08 | Batch ROI Extractor | Batch image processing, Otsu segmentation, particle analysis, file I/O |
+| 03a | Color Bar Generator | Synthetic image generation, RGB encoding |
 
-# | 09 | Connected Components | BFS flood-fill labeling, 8-connectivity |
+| 03b | RGB to Grayscale | Luminance weighting (BT.601, BT.709), method comparison |
 
-# 
+| 04 | Image Adjustments | Brightness, contrast, solarization, desaturation, live preview via `DialogListener` |
 
-# \### General Installation
+| 05 | Histogram Operations | Histogram expansion, histogram equalization via CDF |
 
-# 
+| 06 | Spatial Filters | Linear convolution (mean, sharpen, edge); Sobel operator; median filter |
 
-# 1\. Copy the `.java` file(s) into the `plugins/` folder of your ImageJ installation.
+| 07 | Morphological Operations | Erosion, dilation, outline extraction, morphological skeleton |
 
-# 2\. Compile via \*\*Plugins > Compile and Run\*\*, selecting the `.java` file. Alternatively, compile with `javac` against `ij.jar` and drop the `.class` file into `plugins/`. The plugin will appear in the Plugins menu after restarting ImageJ.
+| 08 | Batch ROI Extractor | Batch image processing, Otsu segmentation, particle analysis, file I/O |
 
-# 3\. Open an appropriate input image and run the plugin from the Plugins menu.
+| 09 | Connected Components | BFS flood-fill labeling, 8-connectivity |
 
-# 
 
-# Input type requirements vary per plugin — check the individual README for each project.
 
-# 
+\### General Installation
 
-# \## Colab Projects (10)
 
-# 
 
-# | # | Project | Topics |
+1\. Copy the `.java` file(s) into the `plugins/` folder of your ImageJ installation.
 
-# |---|---|---|
+2\. Compile via \*\*Plugins > Compile and Run\*\*, selecting the `.java` file. Alternatively, compile with `javac` against `ij.jar` and drop the `.class` file into `plugins/`. The plugin will appear in the Plugins menu after restarting ImageJ.
 
-# | 10 | Synthetic YOLO Pipeline | ROI extraction, synthetic dataset generation, data augmentation, YOLOv5 training |
+3\. Open an appropriate input image and run the plugin from the Plugins menu.
 
-# 
 
-# \### Overview
 
-# 
+Input type requirements vary per plugin — check the individual README for each project.
 
-# Project 10 consists of three notebooks designed to run in sequence on Google Colab with a GPU runtime:
 
-# 
 
-# 1\. `roiExtraction.ipynb` — segments objects from a source image (e.g. a sprite sheet) using Gaussian blur, Otsu thresholding, and contour detection, and exports the cropped ROIs as a ZIP.
+\## Colab Projects (10)
 
-# 2\. `yoloDatasetGen.ipynb` — composites the extracted ROIs onto downloaded background images to generate a synthetic labeled dataset in YOLO format.
 
-# 3\. `yoloTraining.ipynb` — splits the dataset, applies augmentation, and trains a YOLOv5m detector for 100 epochs.
+
+| # | Project | Topics |
+
+|---|---|---|
+
+| 10 | Synthetic YOLO Pipeline | ROI extraction, synthetic dataset generation, data augmentation, YOLOv5 training |
+
+
+
+\### Overview
+
+
+
+Project 10 consists of three notebooks designed to run in sequence on Google Colab with a GPU runtime:
+
+
+
+1\. `roiExtraction.ipynb` — segments objects from a source image (e.g. a sprite sheet) using Gaussian blur, Otsu thresholding, and contour detection, and exports the cropped ROIs as a ZIP.
+
+2\. `yoloDatasetGen.ipynb` — composites the extracted ROIs onto downloaded background images to generate a synthetic labeled dataset in YOLO format.
+
+3\. `yoloTraining.ipynb` — splits the dataset, applies augmentation, and trains a YOLOv5m detector for 100 epochs.
 
