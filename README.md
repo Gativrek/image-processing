@@ -2,15 +2,7 @@
 
 # 
 
-# Collection of image processing projects developed for an Image Processing course that I attended during my undergraduate days.
-
-# Covers classical image analysis techniques implemented from scratch in Java as ImageJ
-
-# plugins, and a deep learning pipeline built in Python on Google Colab.
-
-# 
-
-# \---
+# Collection of image processing projects developed for an Image Processing course that I attended during my undergraduate days at the Instituto Federal Fluminense. Covers classical image analysis techniques implemented from scratch in Java as ImageJ plugins, and a deep learning pipeline built in Python on Google Colab.
 
 # 
 
@@ -102,19 +94,11 @@
 
 # 
 
-# \---
-
-# 
-
 # \## Java Projects (01–09)
 
 # 
 
-# All Java projects are ImageJ plugins written and compiled in Eclipse IDE.
-
-# Each implements its processing pipeline from scratch without relying on
-
-# ImageJ's built-in filters, except where noted.
+# All Java projects are ImageJ plugins written and compiled in Eclipse IDE. Each implements its processing pipeline from scratch without relying on ImageJ's built-in filters, except where noted.
 
 # 
 
@@ -122,7 +106,7 @@
 
 # |---|---|---|
 
-# | 01 | Blood Cell Analysis | Calibration, background subtraction, Otsu thresholding, watershed, particle analysis |
+# | 01 | Blood Cell Analysis | Finding white blood cells in a microscope picture |
 
 # | 02 | Channel Split and Merge | RGB bit manipulation, packed integer encoding |
 
@@ -150,21 +134,13 @@
 
 # 1\. Copy the `.java` file(s) into the `plugins/` folder of your ImageJ installation.
 
-# 2\. Compile via \*\*Plugins > Compile and Run\*\*, selecting the `.java` file.
-
-# &#x20;  Alternatively, compile with `javac` against `ij.jar` and drop the `.class`
-
-# &#x20;  file into `plugins/`. The plugin will appear in the Plugins menu after restarting ImageJ.
+# 2\. Compile via \*\*Plugins > Compile and Run\*\*, selecting the `.java` file. Alternatively, compile with `javac` against `ij.jar` and drop the `.class` file into `plugins/`. The plugin will appear in the Plugins menu after restarting ImageJ.
 
 # 3\. Open an appropriate input image and run the plugin from the Plugins menu.
 
 # 
 
 # Input type requirements vary per plugin — check the individual README for each project.
-
-# 
-
-# \---
 
 # 
 
@@ -184,23 +160,13 @@
 
 # 
 
-# Project 10 consists of three notebooks designed to run in sequence on Google Colab
-
-# with a GPU runtime:
+# Project 10 consists of three notebooks designed to run in sequence on Google Colab with a GPU runtime:
 
 # 
 
-# 1\. `roiExtraction.ipynb` — segments objects from a source image (e.g. a sprite sheet)
+# 1\. `roiExtraction.ipynb` — segments objects from a source image (e.g. a sprite sheet) using Gaussian blur, Otsu thresholding, and contour detection, and exports the cropped ROIs as a ZIP.
 
-# &#x20;  using Gaussian blur, Otsu thresholding, and contour detection, and exports the
+# 2\. `yoloDatasetGen.ipynb` — composites the extracted ROIs onto downloaded background images to generate a synthetic labeled dataset in YOLO format.
 
-# &#x20;  cropped ROIs as a ZIP.
-
-# 2\. `yoloDatasetGen.ipynb` — composites the extracted ROIs onto downloaded background
-
-# &#x20;  images to generate a synthetic labeled dataset in YOLO format.
-
-# 3\. `yoloTraining.ipynb` — splits the dataset, applies augmentation, and trains a
-
-# &#x20;  YOLOv5m detector for 100 epochs.
+# 3\. `yoloTraining.ipynb` — splits the dataset, applies augmentation, and trains a YOLOv5m detector for 100 epochs.
 
