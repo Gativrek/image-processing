@@ -66,7 +66,7 @@ All Java projects are ImageJ plugins written and compiled in Eclipse IDE. Each i
 ### General Installation
 
 1. Copy the `.java` file(s) into the `plugins/` folder of your ImageJ installation.
-2. Compile via \*\*Plugins > Compile and Run\*\*, selecting the `.java` file. Alternatively, compile with `javac` against `ij.jar` and drop the `.class` file into `plugins/`. The plugin will appear in the Plugins menu after restarting ImageJ.
+2. Compile via **Plugins > Compile and Run**, selecting the `.java` file. Alternatively, compile with `javac` against `ij.jar` and drop the `.class` file into `plugins/`. The plugin will appear in the Plugins menu after restarting ImageJ.
 3. Open an appropriate input image and run the plugin from the Plugins menu.
 
 Input type requirements vary per plugin — check the individual README for each project.
